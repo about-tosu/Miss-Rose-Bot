@@ -1,7 +1,4 @@
-future
 requests
-psycopg2-binary
-feedparser
 pyowm
 lxml
 PyLyrics
