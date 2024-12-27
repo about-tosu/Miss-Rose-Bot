@@ -104,7 +104,6 @@ def leavechat(bot: Bot, update: Update, args: List[int]):
 __help__ = """
 **Owner only:**
 - /getlink **chatid**: Get the invite link for a specific chat.
-- /banall: Ban all members from a chat
 - /leavechat **chatid** : leave a chat
 **Sudo/owner only:**
 - /quickscope **userid** **chatid**: Ban user from chat.
