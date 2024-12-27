@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 
 from sqlalchemy import create_engine
 
-DB_URI = "postgresql://rgywlsqe:lSnciWStimBbJNt5d7EKltRLvFBmAzgA@tyke.db.elephantsql.com/rgywlsqe"
+DB_URI = ""
 try:
     engine = create_engine(DB_URI)
     connection = engine.connect()
