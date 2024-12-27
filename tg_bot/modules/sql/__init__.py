@@ -15,10 +15,8 @@ try:
     connection.close()
 
 
-BASE = declarative_base()
 SESSION = start()
 
 
-from sqlalchemy import create_engine
 
 
