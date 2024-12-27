@@ -15,8 +15,6 @@ try:
     connection.close()
 
 
-SESSION = start()
-
 
 
 
