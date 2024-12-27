@@ -12,7 +12,7 @@ from sqlalchemy import create_engine
 BASE = declarative_base()
 
 def start():
-    engine = create_engine("postgres://rgywlsqe:lSnciWStimBbJNt5d7EKltRLvFBmAzgA@tyke.db.elephantsql.com/rgywlsqe", client_encoding="utf8")
+    engine = create_engine("postgres://rgywlsqe:lSnciWStimBbJNt5d7EKltRLvFBmAzgA@tyke.db.elephantsql.com/rgywlsqe")
     BASE.metadata.bind = engine  # Make sure this line is properly indented
     return sessionmaker(bind=engine)()
 
