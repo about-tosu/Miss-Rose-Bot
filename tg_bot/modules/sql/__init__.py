@@ -11,6 +11,10 @@ try:
     connection = engine.connect()
     print("Database connection successful!")
     connection.close()
+    except Exception as e:
+    print(f"Error: {e}")
+BASE = declarative_base()  # Correct placement
+
     BASE.metadata.bind = engine  # Make sure this line is properly indented
     return sessionmaker(bind=engine)()
 
