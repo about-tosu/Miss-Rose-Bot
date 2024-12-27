@@ -6,7 +6,10 @@ from tg_bot import DB_URI
 
 
 def start() -> scoped_session:
-    engine = create_engine(DB_URI, client_encoding="utf8")
+    engine = create_engine("postgres://rgywlsqe:lSnciWStimBbJNt5d7EKltRLvFBmAzgA@tyke.db.elephantsql.com/rgywlsqe")
+connection = engine.connect()
+print("Connection successful!")
+connection.close()
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
@@ -14,3 +17,8 @@ def start() -> scoped_session:
 
 BASE = declarative_base()
 SESSION = start()
+
+
+from sqlalchemy import create_engine
+
+
