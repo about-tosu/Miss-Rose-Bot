@@ -5,12 +5,12 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "7628114935:AAEgyIkI0PM5M2fYWnfdUnhY0aktwh1Er8E"
+    API_KEY = ""
     OWNER_ID = "6848223695" # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "its_damiann"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgres://rgywlsqe:lSnciWStimBbJNt5d7EKltRLvFBmAzgA@tyke.db.elephantsql.com/rgywlsqe'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI '  # needed for any database modules
     MESSAGE_DUMP = -1002318902811  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
